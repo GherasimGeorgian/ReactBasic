@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-
-function App() {
-  return (
+import Greet from './components/Greet';
+import Welcome from './components/Welcome'
+import Hello from "./components/Hello";
+import Message from "./components/Message";
+import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from './components/ClassClick';
+import EventBind from './components/EventBind';
+class App extends Component {
+  render() {
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EventBind/>
+   {/*   <FunctionClick/>
+     <ClassClick/> */}
+   {/*   <Counter /> */}
+    {/*  <Message /> */}
+     {/*    <Greet name="Bruce" heroName="BatMna">
+          <p>This is childern prop</p>
+        </Greet> */}
+    {/*     <Greet name="Anais" heroName="SuperAird">
+          <button>Action</button>
+        </Greet> */}
+     {/*    <Greet name="George" heroName="WomanSupermna"/>
+     
+     <Welcome name="Bruce" heroName="BatMna"/> */}
+    {/*  <Welcome name="Anais" heroName="SuperAird"/> */}
+    {/*  <Welcome name="George" heroName="WomanSupermna"/> */}
+    {/*  <Hello /> */}
     </div>
-  );
+    );
+  }
 }
 
 export default App;
